@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+{% block custom_css %}
+{% load static %}
+
+<style>
+html,body{
+    height:100%;
+    padding: 0;
+    margin: 0;
+    color: white;
+    }
+   
+html{
+    
+   
+    background-size:cover;
+    background-color: aqua;
+   
+}
+body{
+    background: rgba(0, 0, 0, 0.466);
+}
+#home-content{
+    text-align: center;
+    padding-top: 20%;
+}
+</style>
+{% endblock custom_css %}
+
+
+<div class="container">
+  <div class="row">
+      <div class="col">
+          <div id="home-content">
+              <h1>WE DECIDE</h1>
+              <h3>Your Vote Counts!</h3>
+              
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="card text-center">
+  <div class="card-body">
+    <a class="btn btn-dark" href="{% url 'polls:index' %}">
+        VOTE NOW</a
+      >
+  </div>
+</div>
+{% endblock %}
