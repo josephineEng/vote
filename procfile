@@ -1,2 +1,1 @@
-web: gunicorn pollster.application.wsg
-web: python manage.py runserver
+web: waitress-serve --port=$PORT --threads=$WEB_CONCURRENCY --asyncore-use-poll --backlog=4096 pollster.wsgi:application
