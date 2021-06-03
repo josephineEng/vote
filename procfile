@@ -1,1 +1,2 @@
 web: gunicorn pollster.application.wsg
+web: python manage.py runserver
