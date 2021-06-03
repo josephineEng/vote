@@ -1,1 +1,1 @@
-web: gunicorn pollster.wsg
+web: gunicorn pollster.application.wsg
