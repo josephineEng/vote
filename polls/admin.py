@@ -8,8 +8,8 @@ admin.site.index_title = "MAKE SITE CHANGES HERE"
 
 
 class ChoiceInline(admin.TabularInline):
-    model = Choice
-    extra = 3
+  model = Choice
+  extra = 3
 
 
 class QuestionAdmin(admin.ModelAdmin):
